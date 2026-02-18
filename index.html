@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICG Social</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">S</div>
+        <ul>
+            <li><i class="fa-solid fa-house"></i></li>
+            <li><i class="fa-solid fa-user"></i></li>
+            <li><i class="fa-solid fa-message"></i></li>
+            <li><i class="fa-solid fa-bell"></i></li>
+            <li><i class="fa-solid fa-gear"></i></li>
+        </ul>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+        <div class="header">
+            <i class="fa-solid fa-bars menu-btn" onclick="toggleSidebar()"></i>
+            <h2>Social Network</h2>
+
+            <div class="search">
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <img src="https://api.dicebear.com/7.x/lorelei/svg?seed=You&backgroundColor=b6e3f4,c0aede,d1d4f9" class="profile-img">
+        </div>
+
+        <!-- Create Post -->
+        <div class="create-post">
+            <textarea id="postText" placeholder="Share something..."></textarea>
+            <button onclick="createPost()">Post</button>
+        </div>
+
+        <!-- Posts -->
+        <div id="posts"></div>
+
+    </div>
+
+    <!-- Members -->
+    <div class="right-sidebar">
+        <h3>Members</h3>
+        <div id="members"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
